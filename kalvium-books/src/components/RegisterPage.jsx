@@ -41,7 +41,6 @@ function Register() {
 
       alert("Registration Successful");
       console.log(`${name}, ${email}, ${password}`);
-
     } else {
       alert("Please check your inputs.");
     }
