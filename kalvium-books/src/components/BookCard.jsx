@@ -19,10 +19,10 @@ function Book({ filteredBooks, searchVal }) {
 
   const displayBooks =
     filteredBooks && filteredBooks.length ? filteredBooks : books;
-    console.log("Display Books Length:", filteredBooks.length);
-    
-    return (
-      <div className="flex flex-wrap justify-center gap-10 px-5 py-6 mx-4">
+  console.log("Display Books Length:", filteredBooks.length);
+
+  return (
+    <div className="flex flex-wrap justify-center gap-10 px-5 py-6 mx-4">
       {filteredBooks.length <= 0 ? (
         <div className="text-center">No books available.</div>
       ) : (

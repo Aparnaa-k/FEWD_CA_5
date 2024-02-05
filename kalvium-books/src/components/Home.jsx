@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Book from "./Book";
+import Book from "./BookCard";
 
 function HomePage() {
   const [books, setBooks] = useState([]);
