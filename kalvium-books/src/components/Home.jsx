@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Book from "./book";
+import Book from "./Book";
 
 function HomePage() {
   const [books, setBooks] = useState([]);
@@ -47,7 +47,7 @@ function HomePage() {
             console.log(err);
           });
       }
-    }, 300)
+    }, 300);
 
     return () => clearTimeout(delaySearch);
   }, [searchVal]);
@@ -81,7 +81,7 @@ function HomePage() {
           </Link>
         </div>
       </nav>
-        <Book filteredBooks={displayBooks} searchVal={searchVal} />
+      <Book filteredBooks={displayBooks} searchVal={searchVal} />
     </>
   );
 }
